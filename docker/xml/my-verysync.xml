@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>verysync</Name>
+  <Repository>jonnyan404/verysync</Repository>
+  <Registry>https://hub.docker.com/r/jonnyan404/verysync/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jonnyan404/verysync/</Support>
+  <Project/>
+  <Overview>[&#x5B98;&#x65B9;QQ&#x7FA4;&#x8BA4;&#x8BC1;]&#x652F;&#x6301;arm64/amd64&#x7684;&#x5FAE;&#x529B;&#x540C;&#x6B65;&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/jonnyan404/verysync/</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1642653110</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>[&#x5B98;&#x65B9;QQ&#x7FA4;&#x8BA4;&#x8BC1;]&#x652F;&#x6301;arm64/amd64&#x7684;&#x5FAE;&#x529B;&#x540C;&#x6B65;&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/jonnyan404/verysync/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>22037</HostPort>
+        <ContainerPort>22037</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>22027</HostPort>
+        <ContainerPort>22027</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>22330</HostPort>
+        <ContainerPort>22330</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8886</HostPort>
+        <ContainerPort>8886</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="3000" Default="" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Host Port 2" Target="22037" Default="" Mode="udp" Description="Container Port: 22037" Type="Port" Display="always" Required="false" Mask="false">22037</Config>
+  <Config Name="Host Port 3" Target="22027" Default="" Mode="udp" Description="Container Port: 22027" Type="Port" Display="always" Required="false" Mask="false">22027</Config>
+  <Config Name="Host Port 4" Target="22330" Default="" Mode="tcp" Description="Container Port: 22330" Type="Port" Display="always" Required="false" Mask="false">22330</Config>
+  <Config Name="Host Port 5" Target="8886" Default="" Mode="tcp" Description="Container Port: 8886" Type="Port" Display="always" Required="false" Mask="false">8886</Config>
+  <Config Name="Host Path 1" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt</Config>
+</Container>

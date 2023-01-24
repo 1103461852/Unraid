@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>alist</Name>
+  <Repository>xhofe/alist</Repository>
+  <Registry>https://hub.docker.com/r/xhofe/alist/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/xhofe/alist/</Support>
+  <Project/>
+  <Overview>A file list program that supports multiple storage, powered by Gin and React.&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/xhofe/alist/</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/1103461852/IPTV/main/aist_logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669774634</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A file list program that supports multiple storage, powered by Gin and React.&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/xhofe/alist/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5244</HostPort>
+        <ContainerPort>5244</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/alist/</HostDir>
+      <ContainerDir>/opt/alist/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>true</Value>
+      <Name>Community_Applications_Conversion</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Container Path 1" Target="/opt/alist/data" Default="" Mode="rw" Description="Container Path: /opt/alist/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/alist/</Config>
+  <Config Name="Container Port 1" Target="5244" Default="5244" Mode="tcp" Description="Container Port: 5244" Type="Port" Display="always" Required="false" Mask="false">5244</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
