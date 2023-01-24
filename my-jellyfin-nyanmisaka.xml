@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jellyfin-nyanmisaka</Name>
+  <Repository>nyanmisaka/jellyfin</Repository>
+  <Registry>https://hub.docker.com/r/nyanmisaka/jellyfin/</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.50.192</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/nyanmisaka/jellyfin/</Support>
+  <Project/>
+  <Overview>nyanmisaka's Jellyfin 10.8.6 (latest: 22/10/29)&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/nyanmisaka/jellyfin/</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1672034226</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>nyanmisaka's Jellyfin 10.8.6 (latest: 22/10/29)&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/nyanmisaka/jellyfin/</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8096</HostPort>
+        <ContainerPort>8096</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Download/</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jellyfin-nyanmisaka</HostDir>
+      <ContainerDir>/cache</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jellyfin-nyanmisaka</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>compute,video,utility</Value>
+      <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>en_US.UTF-8</Value>
+      <Name>LC_ALL</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>en_US.UTF-8</Value>
+      <Name>LANG</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>en_US:en</Value>
+      <Name>LANGUAGE</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>http://localhost:8096/health</Value>
+      <Name>HEALTHCHECK_URL</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>Community_Applications_Conversion</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Container Path 1" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Download/</Config>
+  <Config Name="Container Path 2" Target="/cache" Default="" Mode="rw" Description="Container Path: /cache" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jellyfin-nyanmisaka</Config>
+  <Config Name="Container Path 3" Target="/config" Default="/mnt/user/appdata/jellyfin-1" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jellyfin-nyanmisaka</Config>
+  <Config Name="Container Port 1" Target="8096" Default="8096" Mode="tcp" Description="Container Port: 8096" Type="Port" Display="always" Required="false" Mask="false">8096</Config>
+  <Config Name="Container Variable 1" Target="NVIDIA_DRIVER_CAPABILITIES" Default="compute,video,utility" Mode="{3}" Description="Container Variable: NVIDIA_DRIVER_CAPABILITIES" Type="Variable" Display="always" Required="false" Mask="false">compute,video,utility</Config>
+  <Config Name="Container Variable 2" Target="LC_ALL" Default="en_US.UTF-8" Mode="{3}" Description="Container Variable: LC_ALL" Type="Variable" Display="always" Required="false" Mask="false">en_US.UTF-8</Config>
+  <Config Name="Container Variable 3" Target="LANG" Default="en_US.UTF-8" Mode="{3}" Description="Container Variable: LANG" Type="Variable" Display="always" Required="false" Mask="false">en_US.UTF-8</Config>
+  <Config Name="Container Variable 4" Target="LANGUAGE" Default="en_US:en" Mode="{3}" Description="Container Variable: LANGUAGE" Type="Variable" Display="always" Required="false" Mask="false">en_US:en</Config>
+  <Config Name="Container Variable 5" Target="HEALTHCHECK_URL" Default="http://localhost:8096/health" Mode="{3}" Description="Container Variable: HEALTHCHECK_URL" Type="Variable" Display="always" Required="false" Mask="false">http://localhost:8096/health</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
